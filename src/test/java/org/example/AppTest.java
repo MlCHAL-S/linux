@@ -1,21 +1,10 @@
 package org.example;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import junit.framework.TestCase;
 
-import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void main() {
-        String helloWorld = "Hello World!";
-        assertEquals( "Hello World!", helloWorld );
+public class AppTest extends TestCase {
+    public void test() {
+        int a = 10;
+        assertEquals(10, a);
     }
 }
